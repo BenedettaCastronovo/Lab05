@@ -16,7 +16,7 @@ def get_connection() -> mysql.connector.connection:
             print("Database does not exist")
             return None
         else:
-            print(err)
+            print(f"Generic error: {err}")
             return None
 
 
